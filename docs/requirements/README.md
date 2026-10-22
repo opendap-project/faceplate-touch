@@ -28,6 +28,7 @@ Requirements for the touch faceplate, the default faceplate of the OpenDAP T1.
 | FPT-022 | The display may need an additional cover glass (lens) so it fits and seals in the case; the stack shall account for it. Prefer the touch module's own cover lens or an off-the-shelf cover glass; a custom cover glass is the only custom part the project may accept (T1-038). | must | Confirmed |
 | FPT-023 | Front layout, seen from the front: above the display, the ambient light sensor centered and the status LED to the right, not all the way to the corner. | must | Confirmed |
 | FPT-024 | Front layout, seen from the front: the main microphone centered below the display. | must | Confirmed |
+| FPT-025 | The status LED should be RGB. If no compliant RGB part fits, a single colour is acceptable. | should | Confirmed |
 
 ## Context
 
