@@ -3,9 +3,9 @@
 - **Date:** 2026-10-22. All stock and price figures were captured on 2026-10-22 unless a row says otherwise.
 - **Scope:** the display and touch panel of the **touch faceplate** only. The aspect-ratio rule below does not apply to the cassette or classic faceplates.
 - **Inputs:**
-  - [`board/docs/research/2026-10-sourcing-alternatives.md`](../../../../board/docs/research/2026-10-sourcing-alternatives.md) §2;
-  - [`board/docs/research/2026-10-component-selection.md`](../../../../board/docs/research/2026-10-component-selection.md) §1;
-  - [`t1/docs/requirements/README.md`](../../../../t1/docs/requirements/README.md) (T1-009, T1-010, T1-013 to T1-016, T1-027 to T1-030);
+  - [`board/docs/research/2026-10-sourcing-alternatives.md`](https://github.com/opendap-project/board/blob/main/docs/research/2026-10-sourcing-alternatives.md) §2;
+  - [`board/docs/research/2026-10-component-selection.md`](https://github.com/opendap-project/board/blob/main/docs/research/2026-10-component-selection.md) §1;
+  - [`t1/docs/requirements/README.md`](https://github.com/opendap-project/t1/blob/main/docs/requirements/README.md) (T1-009, T1-010, T1-013 to T1-016, T1-027 to T1-030);
   - [`faceplates/touch/docs/requirements/README.md`](../requirements/README.md) (FPT-002, FPT-013, FPT-014, FPT-018, FPT-019).
 - **Status:** desk research. Nothing here has been built or measured. Every pick is **landed as a recommendation, not validated**: it still needs samples on an RK3566 board, a measured power curve and an outdoor readability check.
 
@@ -210,7 +210,7 @@ The maintainers' preference order is applied first, then fit, then availability.
 
 | Technology | What it is | Optics and thickness | Availability for this product | Mainline |
 |---|---|---|---|---|
-| **In-cell (TDDI)** | Touch electrodes inside the LCD cell; one IC drives display and touch | Thinnest, best transmittance, no extra air or adhesive layer | Phone-class panels only. **None found** in distributor stock at 2.4–3.5"; no 2:3 TDDI part with init code | `DRM_PANEL_SYNAPTICS_TDDI` exists but is off in Debian, and no small panel has an entry ([component-selection §1](../../../../board/docs/research/2026-10-component-selection.md)) |
+| **In-cell (TDDI)** | Touch electrodes inside the LCD cell; one IC drives display and touch | Thinnest, best transmittance, no extra air or adhesive layer | Phone-class panels only. **None found** in distributor stock at 2.4–3.5"; no 2:3 TDDI part with init code | `DRM_PANEL_SYNAPTICS_TDDI` exists but is off in Debian, and no small panel has an entry ([component-selection §1](https://github.com/opendap-project/board/blob/main/docs/research/2026-10-component-selection.md)) |
 | **On-cell** | Sensor patterned on the colour-filter glass | Thin, good optics | Small AMOLEDs (CO5300, RM690B0 families) and some LCDs. **None stocked** that are compliant | Touch IC drivers vary; the DDICs lack mainline drivers |
 | **Out-cell OGS / G+G** | Sensor on the cover glass (OGS) or on a second glass (G+G) | One or two glasses; with OCA or OCR bonding, optics are very good | Offered by Winstar (codes `G`, `G1`, `G2`) and others as options. Stocked parts are oversized (Winstar) | GT911, FT5x06 and ST1633 are all mainline |
 | **Out-cell GFF (G+F+F)** | Film sensors under a cover lens | Cheapest; slightly lower transmittance than glass sensors | **What the stocked candidates use.** Winstar `C`/`C1`/`C2` are GFF; Focus "CB"/"-C" and Displaytech "PTS" do not state their stack (**UNVERIFIED**, likely GFF or G+G, optically bonded) | Same |
@@ -289,7 +289,7 @@ The maintainers' preference order is applied first, then fit, then availability.
 | BuyDisplay / East Rising | HTTP 403 | Not covered; semi-custom 2:3 options from them are **UNVERIFIED** |
 | Crystalfontz, Riverdi, Raystar, Kingtech, Seeed, Adafruit, DFRobot | Only Digi-Key-listed parts were seen (Adafruit and DFRobot entries are SPI or ESP32 boards) | No compliant DSI touch part surfaced; maker-direct catalogs not searched |
 | LCSC, Arrow, Farnell stock | FindChips showed no rows for the Focus parts | Treated as 0 / not listed |
-| Handheld-console spare panels | Not searchable (marketplaces) | See the [sourcing report](../../../../board/docs/research/2026-10-sourcing-alternatives.md) §2.3: no touch and no lifecycle |
+| Handheld-console spare panels | Not searchable (marketplaces) | See the [sourcing report](https://github.com/opendap-project/board/blob/main/docs/research/2026-10-sourcing-alternatives.md) §2.3: no touch and no lifecycle |
 | Orient 2.35" outline, Displaytech touch stack, Focus CTP stack, GT911 report rate | Datasheets not fully parsed or the figures not published | Marked **UNVERIFIED** |
 | Hardware validation | No samples | Next steps below |
 
