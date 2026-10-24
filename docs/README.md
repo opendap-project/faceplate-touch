@@ -3,6 +3,7 @@
 | Folder | Contents |
 |---|---|
 | [`requirements/`](requirements/) | What this project must achieve. Each requirement has an ID, a priority (**must** / **should**) and a status. |
+| [`specs/`](specs/) | Specifications, such as the [faceplate flex](specs/faceplate-flex.md). |
 
 Architecture Decision Records go in `adr/` once decisions are taken.
 
