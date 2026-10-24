@@ -34,7 +34,7 @@ Requirements for the touch faceplate, the default faceplate of the OpenDAP T1.
 ## Context
 
 - Revised on 2026-10-22 ([priority audit](https://github.com/opendap-project/t1/blob/main/docs/research/2026-10-requirement-priorities.md)): FPT-010 withdrawn as a duplicate of FPT-014, FPT-017, FPT-023 and FPT-024; FPT-021 split into FPT-021 (must) and FPT-026 (should); FPT-018 is should, matching its wording (a mainline driver is preferred, not mandatory).
-- FPT-007 to FPT-011: Adopted from the earlier experiments on 2026-10-21 as **Draft**: consistent with the decisions already taken and with the product philosophy, pending the maintainers' confirmation. Part availability still has to be checked against the sourcing rule (T1-010).
+- FPT-007 to FPT-011: Adopted from the earlier experiments on 2026-10-21 as **Draft**: consistent with the decisions already taken and with the product philosophy, pending the maintainers' confirmation. Part availability still has to be checked against the sourcing rule (T1-010). Note (2026-10-24): FPT-007, FPT-009 and FPT-011 were withdrawn on 2026-10-21 and FPT-010 on 2026-10-22 (see the entries around this one); only FPT-008 is still Draft.
 - Withdrawn on 2026-10-21 after the [experiment review](https://github.com/opendap-project/t1/blob/main/docs/research/2026-10-experiment-review.md): FPT-007, FPT-009, FPT-011.
 - Mainline-supported panels already used on RK3566 handhelds (for example the Anbernic RG353P panel, `panel-newvision-nv3051d`) show which panels qualify.
 - FPT-012 was replaced by the requirement above (2026-10-21): a mainline driver is preferred, not mandatory. Debian's kernel may also need the driver enabled; asking Debian is the standard path.

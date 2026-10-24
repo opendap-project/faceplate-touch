@@ -65,6 +65,7 @@ All body figures are **outer** dimensions of the main body, which already includ
    - The ideal budget is 48–50 mm.
    - The only stocked panels that fit the ideal width are all non-touch and either non-compliant (2.4" 3:4, 3.0" 9:16) or too small and out of stock in MIPI (2.35" 2:3).
 2. **The best compliant option needs the body to grow to about 59.5 × 91.5 mm (+5.5 mm wide, +5.9 mm tall, ratio 1.54).** That is well inside the 62.5 × 95 mm maximum.
+   - Note (2026-10-24): [t1 ADR 0003](https://github.com/opendap-project/t1/blob/main/docs/adr/0003-tentative-body-size.md) (Accepted) later set the tentative body at 59.5 × 94.3 × 24 mm (credit-card proportions at this width), taller than the 91.5 mm the display alone needs; that ADR is the current body size.
 3. **Two stocked 2:3 touch modules fit that grown body:**
    - **Focus LCDs E35GH-I-MW800-CB:** MIPI DSI. It has an **exact mainline compatible**, so no new kernel code is needed. Stock is thin.
    - **Displaytech DT035CTFT-IPS-SHB-PTS:** RGB plus SPI. It has **23 times more stock**. It has no mainline panel driver yet, but a new compatible in a Debian-enabled driver is a credible path.
