@@ -11,7 +11,7 @@ Requirements for the touch faceplate, the default faceplate of the OpenDAP T1.
 | FPT-005 | The touch faceplate shall meet the [faceplate interface](https://github.com/opendap-project/t1/blob/main/docs/specs/faceplate-interface.md) defined in the t1 repository. | must | Confirmed |
 | FPT-006 | The touch faceplate shall keep its own mechanics in this repository. | must | Confirmed |
 | FPT-007 | Display: 3.5" IPS, 480 × 800, MIPI DSI (ST7701S controller), with mainline Linux support. | should | Withdrawn |
-| FPT-008 | Touch controller: Goodix GT911 (mainline driver). | should | Draft |
+| FPT-008 | Touch controller: Goodix GT911 (mainline driver). | should | Confirmed |
 | FPT-009 | Stack: cover glass, touch and LCD laminated on an aluminum tray with a graphite spreader that also takes heat from the SoC. | should | Withdrawn |
 | FPT-010 | Front sensors: ambient light sensor and microphone, next to the status LED. | should | Withdrawn |
 | FPT-011 | Faceplate outline 53 × 90.5 × 3.6 mm. | should | Withdrawn |
@@ -33,6 +33,7 @@ Requirements for the touch faceplate, the default faceplate of the OpenDAP T1.
 
 ## Context
 
+- FPT-008 confirmed on 2026-10-24 under the maintainers' delegation: [ADR 0001](../adr/0001-focus-lcds-e35gh-display.md) (Accepted) fixes the GT911 with the display.
 - Revised on 2026-10-22 ([priority audit](https://github.com/opendap-project/t1/blob/main/docs/research/2026-10-requirement-priorities.md)): FPT-010 withdrawn as a duplicate of FPT-014, FPT-017, FPT-023 and FPT-024; FPT-021 split into FPT-021 (must) and FPT-026 (should); FPT-018 is should, matching its wording (a mainline driver is preferred, not mandatory).
 - FPT-007 to FPT-011: Adopted from the earlier experiments on 2026-10-21 as **Draft**: consistent with the decisions already taken and with the product philosophy, pending the maintainers' confirmation. Part availability still has to be checked against the sourcing rule (T1-010). Note (2026-10-24): FPT-007, FPT-009 and FPT-011 were withdrawn on 2026-10-21 and FPT-010 on 2026-10-22 (see the entries around this one); only FPT-008 is still Draft.
 - Withdrawn on 2026-10-21 after the [experiment review](https://github.com/opendap-project/t1/blob/main/docs/research/2026-10-experiment-review.md): FPT-007, FPT-009, FPT-011.
